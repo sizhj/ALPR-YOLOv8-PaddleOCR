@@ -1,0 +1,18 @@
+ultralytics==8.0.196
+opencv-python==4.8.1.78
+numpy==1.24.4
+filterpy==1.4.5
+scipy==1.11.3
+lap==0.4.0
+
+# OCR 模块
+# 替换原有 EasyOCR，使用 PaddleOCR 提升中文车牌识别准确率
+paddlepaddle==2.5.2
+paddleocr==2.7.0.3
+easyocr==1.7.1   # 保留作为备用引擎
+
+# Web Demo
+gradio==4.7.1
+
+# 数据库（Python 内置，无需额外安装）
+# sqlite3
