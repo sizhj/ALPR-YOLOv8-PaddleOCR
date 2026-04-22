@@ -91,6 +91,20 @@ python app.py
 访问 [http://localhost:7860](http://localhost:7860)
 
 ---
+### 6. 启动 API 服务
+
+​```bash
+uvicorn api:app --reload --port 8000
+​```
+
+访问 http://localhost:8000/docs 查看完整接口文档
+
+| 接口 | 方法 | 说明 |
+|------|------|------|
+| /detect | POST | 上传图片，识别车牌 |
+| /records | GET | 查询历史记录（支持模糊搜索） |
+| /records/{plate} | GET | 精确查询单个车牌 |
+| /stats | GET | 交通流量统计 |
 
 ## Web Demo 功能
 
